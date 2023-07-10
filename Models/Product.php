@@ -4,6 +4,7 @@
         public $name;
         public $animal;
         public $price;
+        public $img;
 
         function __construct ($name, $animal, $price){
             $this->name = $name;
