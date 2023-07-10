@@ -3,13 +3,10 @@
   require_once __DIR__."/Models/Food.php";
   require_once __DIR__."/Models/Accessories.php";
   require_once __DIR__."/Models/Toys.php";
+  require_once __DIR__."/Models/Dimensions.php";
 
     
-
-    // class Ingredients {
-    //     public $ingredients_1;
-    //     public $ingredients_2;
-    // }
+  
  
 
     $Food_1 =new Food ('Royal Canin Mini Adult','Cane', 43.99, '545g',['ingrdiente 1', 'ingrediente 2']);
@@ -22,16 +19,16 @@
     var_dump($Food_4);
 
 
-    $Accessory_1 =new Accessories ('Voliera','Uccello', 43.99, 'legno','L83 X P67 x H153cm');
+    $Accessory_1 =new Accessories ('Voliera','Uccello', 43.99, 'legno',new Dimensions('L83 X P67 x H153cm'));
     var_dump( $Accessory_1);
-    $Accessory_1 =new Accessories ('Cartucce per filtro','Pesce', 43.99, 'Materiale espanso ','ND');
+    $Accessory_1 =new Accessories ('Cartucce per filtro','Pesce', 43.99, 'Materiale espanso ', new Dimensions('ND'));
     var_dump( $Accessory_1);
 
 
-    $Toy_1 =new Toys ('Kong Classic','Cane', 43.99, 'Galleggia e rimbalza ','8.5cm x 10 cm');
+    $Toy_1 =new Toys ('Kong Classic','Cane', 43.99, 'Galleggia e rimbalza ', new Dimensions ('8.5cm x 10 cm'));
     var_dump( $Toy_1);
 
-    $Toy_2 =new Toys ('Topini di peluche','Gatto', 43.99, 'Morbido con codina in corda ','8.5cm x 10 cm');
+    $Toy_2 =new Toys ('Topini di peluche','Gatto', 43.99, 'Morbido con codina in corda ',new Dimensions('8.5cm x 10 cm'));
     var_dump( $Toy_2);
 
 
