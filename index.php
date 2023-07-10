@@ -2,6 +2,7 @@
   require_once __DIR__."/Models/Product.php";
   require_once __DIR__."/Models/Food.php";
   require_once __DIR__."/Models/Accessories.php";
+  require_once __DIR__."/Models/Toys.php";
 
     
 
@@ -25,6 +26,14 @@
     var_dump( $Accessory_1);
     $Accessory_1 =new Accessories ('Cartucce per filtro','Pesce', 43.99, 'Materiale espanso ','ND');
     var_dump( $Accessory_1);
+
+
+    $Toy_1 =new Toys ('Kong Classic','Cane', 43.99, 'Galleggia e rimbalza ','8.5cm x 10 cm');
+    var_dump( $Toy_1);
+
+    $Toy_2 =new Toys ('Topini di peluche','Gatto', 43.99, 'Morbido con codina in corda ','8.5cm x 10 cm');
+    var_dump( $Toy_2);
+
 
 ?>
 
